@@ -22,3 +22,9 @@ create_github_token() #Create a Personal Access Token to connect the two
 
 library(gitcreds)
 gitcreds_set() #Insert the PAT
+
+#Change the name of the main branch
+library(usethis)
+git_default_branch() #check the name of the main branch
+git_default_branch_rename()
+
