@@ -1,12 +1,24 @@
-# Local First
+# Local First - Learning git-hub
 
 This is some text in my Readme
 
-add a line with some more text
-token: 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
+PAT; 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
 
-install.packages("gitcreds")
-library("gitcreds")
+# Check version of git in Terminal
+git --version
+
+# Configure git
 library(usethis)
+use_git_config(user.name = "federica", user.email = "fusi.fede@gmail.com")
 
-gitcreds_set() 
+#After you created a new local project, this is how to configure git
+library(usethis)
+use_git()
+## check the git tab close to history/connections
+
+#Connect RStudio and GitHUb
+library(usethis)
+create_github_token() #Create a Personal Access Token to connect the two
+
+library(gitcreds)
+gitcreds_set() #Insert the PAT
