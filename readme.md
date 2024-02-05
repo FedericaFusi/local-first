@@ -2,7 +2,7 @@
 
 This is some text in my Readme
 
-PAT; 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
+PAT; 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
 
 # Check version of git in Terminal
 git --version
@@ -26,5 +26,6 @@ gitcreds_set() #Insert the PAT
 #Change the name of the main branch
 library(usethis)
 git_default_branch() #check the name of the main branch
-git_default_branch_rename()
-
+git_default_branch_rename() #Change to main
+git_default_branch_rediscover() #Synch remote and local 
+git_default_branch_configure() #Set up "main" as the default branch for future projects
